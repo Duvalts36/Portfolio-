@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tchana Sironet Duval — Maillots Pro & Services Créatifs</title>
+  <meta name="description" content="Tchana Sironet Duval — Vente de maillots pro à 3500 FCFA. Création de sites web, applications et affiches publicitaires. Contact WhatsApp : +237 691 843 135" />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+  <style>
+    /* Reset minimal */
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background:linear-gradient(180deg,#0b1020 0%, #071020 100%); color:#e6eef8; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; line-height:1.45}
+
+    /* Container */
+    .wrap{max-width:1200px;margin:36px auto;padding:20px}
+
+    /* Header */
+    header{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:18px;background:rgba(255,255,255,0.03);border-radius:14px;backdrop-filter:blur(6px);box-shadow:0 10px 30px rgba(2,6,23,0.6)}
+    .brand{display:flex;align-items:center;gap:14px}
+    .logo{width:64px;height:64px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:20px;color:white;background:linear-gradient(135deg,#0ea5ff,#7c3aed);box-shadow:0 6px 20px rgba(124,58,237,0.18)}
+    .nav{display:flex;gap:14px}
+    .nav a{color:rgba(230,238,248,0.9);text-decoration:none;font-weight:600;padding:8px 12px;border-radius:10px}
+    .nav a:hover{background:rgba(255,255,255,0.03)}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:26px;align-items:center;margin-top:26px}
+    .hero-left h1{font-size:36px;line-height:1.03;margin-bottom:12px}
+    .accent{background:linear-gradient(90deg,#06b6d4,#7c3aed);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .lead{color:rgba(230,238,248,0.85);margin-bottom:18px}
+    .cta-row{display:flex;gap:12px;align-items:center}
+    .btn{padding:12px 16px;border-radius:12px;font-weight:800;border:0;cursor:pointer;text-decoration:none;display:inline-flex;gap:10px;align-items:center}
+    .btn-primary{background:linear-gradient(90deg,#06b6d4,#7c3aed);color:#041226}
+    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:inherit}
+
+    /* Spotlight card */
+    .card{background:linear-gradient(180deg,rgba(255,255,255,0.03),rgba(255,255,255,0.01));padding:18px;border-radius:14px;box-shadow:0 10px 30px rgba(2,6,23,0.6)}
+
+    /* Product list */
+    .products{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}
+    .product{background:linear-gradient(180deg,#081127, #0d1a2a);border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:10px;align-items:center;transition:transform .28s cubic-bezier(.2,.9,.3,1), box-shadow .28s}
+    .product:hover{transform:translateY(-8px);box-shadow:0 20px 40px rgba(2,6,23,0.6)}
+    .product img{width:100%;height:180px;object-fit:cover;border-radius:8px;border:1px solid rgba(255,255,255,0.04)}
+    .price{font-weight:900;font-size:18px;color:#9ae6b4}
+    .product-title{font-weight:800}
+
+    /* Features */
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
+    .feature{padding:16px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);border-radius:12px}
+
+    /* Testimonials */
+    .testimonials{display:flex;gap:12px;overflow:auto;padding-bottom:8px;margin-top:18px}
+    .testimonial{min-width:280px;padding:16px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01))}
+
+    /* Contact */
+    .contact-grid{display:grid;grid-template-columns:1fr 420px;gap:18px;margin-top:22px}
+    form{display:flex;flex-direction:column;gap:12px}
+    input,textarea{padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:inherit}
+    textarea{min-height:120px;resize:vertical}
+    .small{font-size:13px;color:rgba(230,238,248,0.7)}
+
+    /* Floating WhatsApp */
+    .whatsapp{position:fixed;right:20px;bottom:22px;background:linear-gradient(90deg,#25D366,#128C7E);width:64px;height:64px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 30px rgba(2,6,23,0.6);z-index:1000}
+    .whatsapp a{color:white;text-decoration:none;font-weight:800;display:flex;align-items:center;gap:8px}
+
+    /* Footer */
+    footer{margin-top:34px;padding:22px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);text-align:center;color:rgba(230,238,248,0.7)}
+
+    /* Responsive */
+    @media (max-width:1000px){.hero{grid-template-columns:1fr;}.contact-grid{grid-template-columns:1fr}.products{grid-template-columns:repeat(2,1fr)}.features{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:640px){.products{grid-template-columns:1fr}.nav{display:none}.logo{width:48px;height:48px;font-size:16px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">TS</div>
+        <div>
+          <div style="font-weight:900;font-size:16px">Tchana Sironet Duval</div>
+          <div style="font-size:12px;color:rgba(230,238,248,0.7)">Maillots pro • Création web • Applications • Affiches</div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#maillots">Maillots</a>
+        <a href="#services">Services</a>
+        <a href="#avis">Avis</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-left">
+          <h1>Maillots pro de qualité — <span class="accent">3500 FCFA</span></h1>
+          <p class="lead">Vends maillots professionnels, personnalisation possible, livraison locale rapide à Yaoundé. Je crée aussi des sites web modernes, applications et affiches publicitaires sur mesure.</p>
+
+          <div class="cta-row">
+            <a class="btn btn-primary" href="https://wa.me/237691843135?text=Bonjour%20Tchana%20Sironet%20Duval%2C%20je%20souhaite%20commander%20un%20maillot%20pro%20%283500%20FCFA%29%20.%20Taille%20%3A%20">Commander sur WhatsApp</a>
+            <a class="btn btn-ghost" href="#services">Voir mes services</a>
+          </div>
+
+          <div class="features" style="margin-top:18px">
+            <div class="feature card">
+              <div style="font-weight:800">Qualité garantie</div>
+              <div class="small">Maillots résistants, coutures renforcées et couleurs durables.</div>
+            </div>
+            <div class="feature card">
+              <div style="font-weight:800">Livraison rapide</div>
+              <div class="small">Préparation en 48h, livraison locale à Yaoundé.</div>
+            </div>
+            <div class="feature card">
+              <div style="font-weight:800">Support client</div>
+              <div class="small">Contact direct via WhatsApp pour suivi et questions.</div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="card">
+          <div style="font-weight:900;margin-bottom:8px">Offre spéciale</div>
+          <div style="font-size:13px;color:rgba(230,238,248,0.8)">Pour toute commande de 5 maillots, obtient 1 maillot offert ou remise sur personnalisation.</div>
+          <div style="margin-top:12px;font-weight:900;font-size:20px;color:#9ae6b4">3500 FCFA</div>
+
+          <div style="margin-top:14px">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80" alt="maillot" style="width:100%;border-radius:8px;display:block">
+          </div>
+        </aside>
+      </section>
+
+      <section id="maillots" style="margin-top:26px">
+        <h2 style="font-weight:900;margin-bottom:12px">Maillots Pro</h2>
+        <div class="products">
+          <div class="product card">
+            <img src="https://images.unsplash.com/photo-1520975698510-3a2a3e3b6a41?auto=format&fit=crop&w=900&q=80" alt="Maillot 1">
+            <div style="text-align:center;width:100%">
+              <div class="product-title">Maillot Classique</div>
+              <div class="small">Tailles S - XXL</div>
+              <div class="price">3500 FCFA</div>
+              <div style="margin-top:10px">
+                <a class="btn btn-primary" href="https://wa.me/237691843135?text=Bonjour%20Tchana%20%2C%20je%20veux%20commander%20le%20Maillot%20Classique%20%283500%20FCFA%29%20.%20Taille%20%3A%20">Commander</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="product card">
+            <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=900&q=80" alt="Maillot 2">
+            <div style="text-align:center;width:100%">
+              <div class="product-title">Maillot Premium</div>
+              <div class="small">Tissu respirant, finition premium</div>
+              <div class="price">3500 FCFA</div>
+              <div style="margin-top:10px">
+                <a class="btn btn-primary" href="https://wa.me/237691843135?text=Bonjour%20Tchana%20%2C%20je%20veux%20commander%20le%20Maillot%20Premium%20%283500%20FCFA%29%20.%20Taille%20%3A%20">Commander</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="product card">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=80" alt="Maillot 3">
+            <div style="text-align:center;width:100%">
+              <div class="product-title">Maillot Personnalisé</div>
+              <div class="small">Ajout de nom/numéro (sur demande)</div>
+              <div class="price">3500 FCFA</div>
+              <div style="margin-top:10px">
+                <a class="btn btn-primary" href="https://wa.me/237691843135?text=Bonjour%20Tchana%20%2C%20je%20veux%20un%20Maillot%20Personnalis%C3%A9%20%283500%20FCFA%29%20.%20Taille%20%3A%20">Commander</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" style="margin-top:28px">
+        <h2 style="font-weight:900;margin-bottom:12px">Services</h2>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px">
+          <div class="card">
+            <div style="font-weight:800">Création de sites web</div>
+            <div class="small" style="margin-top:8px">Sites vitrines, boutiques simples, optimisation SEO de base, responsive.</div>
+            <div style="margin-top:10px;font-weight:800">À partir de 15 000 FCFA</div>
+          </div>
+          <div class="card">
+            <div style="font-weight:800">Développement d'applications</div>
+            <div class="small" style="margin-top:8px">Applications Android simples, interfaces utilisateur et logique métier.</div>
+            <div style="margin-top:10px;font-weight:800">Sur devis</div>
+          </div>
+          <div class="card">
+            <div style="font-weight:800">Affiches & Flyers</div>
+            <div class="small" style="margin-top:8px">Affiches prêt-à-imprimer, formats A4 / A3, création de visuels percutants.</div>
+            <div style="margin-top:10px;font-weight:800">À partir de 3 500 FCFA</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="avis" style="margin-top:28px">
+        <h2 style="font-weight:900;margin-bottom:12px">Avis clients</h2>
+        <div class="testimonials">
+          <div class="testimonial card">
+            <div style="font-weight:800">Jean P.</div>
+            <div class="small">"Super qualité, livraison rapide. Je recommande !" </div>
+          </div>
+          <div class="testimonial card">
+            <div style="font-weight:800">Amina K.</div>
+            <div class="small">"Excellent travail pour mon affiche d'événement — pro et rapide."</div>
+          </div>
+          <div class="testimonial card">
+            <div style="font-weight:800">Marc L.</div>
+            <div class="small">"Le site qu'il a créé pour moi convertit mieux — bon boulot."</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" style="margin-top:28px">
+        <h2 style="font-weight:900;margin-bottom:12px">Contact</h2>
+        <div class="contact-grid">
+          <div class="card">
+            <form onsubmit="event.preventDefault(); window.open('https://wa.me/237691843135?text=' + encodeURIComponent('Bonjour Tchana, je vous contacte depuis le site. Je veux: ' + (document.getElementById('msg').value || '...')));">
+              <input type="text" placeholder="Votre nom" id="name" required>
+              <input type="email" placeholder="Votre email (optionnel)" id="email">
+              <textarea id="msg" placeholder="Votre message / commande..." required></textarea>
+              <div style="display:flex;gap:8px">
+                <button class="btn btn-primary" type="submit">Envoyer via WhatsApp</button>
+                <a class="btn btn-ghost" href="https://wa.me/237691843135?text=Bonjour%20Tchana%20%2C%20je%20veux%20plus%20d'infos">Discuter maintenant</a>
+              </div>
+            </form>
+            <div style="margin-top:12px" class="small">Numéro WhatsApp : <strong>+237 691 843 135</strong></div>
+          </div>
+
+          <aside class="card">
+            <div style="font-weight:900">À propos</div>
+            <div class="small" style="margin-top:8px">Je suis Tchana Sironet Duval — créateur web, développeur d'applications et designer d'affiches basé à Yaoundé. Je vends des maillots pro à 3500 FCFA et propose des services sur mesure pour entreprises et particuliers.</div>
+
+            <div style="margin-top:12px">
+              <div style="font-weight:800">Services rapides</div>
+              <ul style="margin-top:8px">
+                <li>Design & Branding</li>
+                <li>Développement Web & Mobile</li>
+                <li>Marketing visuel</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div style="display:flex;flex-direction:column;gap:8px;align-items:center">
+        <div style="font-weight:800">© Tchana Sironet Duval</div>
+        <div class="small">WhatsApp : <strong>+237 691 843 135</strong> — Maillots pro à 3500 FCFA</div>
+      </div>
+    </footer>
+  </div>
+
+  <div class="whatsapp" title="Contact WhatsApp">
+    <a href="https://wa.me/237691843135?text=Bonjour%20Tchana%20%2C%20je%20veux%20commander" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+      <!-- Simple WhatsApp SVG icon -->
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20.52 3.48A11.88 11.88 0 0 0 12 .75C6.2.75 1.62 5.33 1.62 11.13c0 1.96.51 3.86 1.48 5.55L.75 23.25l6.77-1.77a11.34 11.34 0 0 0 4.5.91c5.8 0 10.38-4.58 10.38-10.38 0-2.79-1.08-5.4-3.06-7.51z" fill="white" opacity="0.06"/>
+        <path d="M17.4 14.24c-.28-.14-1.66-.82-1.92-.92-.26-.1-.45-.14-.64.14-.19.28-.74.92-.9 1.11-.17.19-.34.21-.62.07-1.68-.83-2.77-1.5-3.88-3.41-.29-.49.29-.45.82-1.5.09-.17.05-.32-.02-.46-.07-.14-.64-1.53-.88-2.09-.23-.55-.47-.47-.64-.48-.17-.01-.36-.01-.55-.01s-.46.07-.7.33c-.24.26-.92.9-.92 2.2 0 1.29.95 2.53 1.08 2.71.13.19 1.86 2.9 4.52 3.96 3.16 1.27 3.16.85 3.73.8.57-.05 1.83-.74 2.09-1.46.26-.72.26-1.34.18-1.46-.09-.12-.35-.19-.63-.34z" fill="white"/>
+      </svg>
+    </a>
+  </div>
+
+  <script>
+    // Smooth scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(function(a){
+      a.addEventListener('click', function(e){
+        e.preventDefault();
+        var target = document.querySelector(this.getAttribute('href'));
+        if(target) target.scrollIntoView({behavior:'smooth'});
+      });
+    });
+  </script>
+</body>
+</html>
